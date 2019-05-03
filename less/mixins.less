@@ -1,1 +1,26 @@
-// Mixins Here
+.btn(@col, @bg-color) {
+  color: @col;
+  background-color: @bg-color;
+  padding: 0.5em 1.5em;
+  font-size: 14px;
+  align-self: start;
+  text-decoration: none;
+  border-radius: 3px;
+  @media @phone {
+    align-self: unset;
+    text-align: center;
+  }
+
+  &:hover {
+    color: @bg-color;
+    background-color: @col;
+  }
+}
+
+.flex(@justify, @align, @direction, @wrap) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+  flex-wrap: @wrap;
+}
