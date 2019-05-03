@@ -1,1 +1,18 @@
-// Navigation code here
+nav {
+  .flex(center, center, column, unset);
+  padding: 2vw 0;
+
+  h1 {
+    font-size: calc(2rem + 1vw);
+    margin-bottom: 0.5em;
+  }
+  .nav-items {
+    .flex(space-evenly, unset, row, unset);
+    a.nav-item {
+      text-decoration: none;
+      color: @nav-font;
+      font-size: 16px;
+      margin-right: 3em;
+    }
+  }
+}
