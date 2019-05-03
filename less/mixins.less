@@ -5,6 +5,15 @@
   font-size: 14px;
   align-self: start;
   text-decoration: none;
+  border-radius: 3px;
+  @media @phone {
+    align-self: unset;
+  }
+
+  &:hover {
+    color: @bg-color;
+    background-color: @col;
+  }
 }
 
 .flex(@justify, @align, @direction, @wrap) {
